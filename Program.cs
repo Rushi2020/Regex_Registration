@@ -22,6 +22,9 @@ namespace Regex_Registration
             string[] checkEmail = { "xyz@gmail.com","xyz@bl.com","abc155@bl.in" , "xyz11@bl.com", "abc+22@abc.com","a12@xyz.in","asdf123@gmail.com" };
             userRegPattern.ValidateEmail(checkEmail);
 
+            string[] checkMobileNo = { "91 8969548565","918695758565","914525412562" };
+            userRegPattern.ValidateMobileNo(checkMobileNo);
+
         }
     }
 }
