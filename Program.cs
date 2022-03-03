@@ -27,7 +27,7 @@ namespace Regex_Registration
             userRegPattern.ValidateMobileNo(checkMobileNo);
 
             //checking mobile number
-            string[] checkPassword = { "AsfZ4512", "sdvfg425AA", "dfgRS12L","145214" };
+            string[] checkPassword = { "ASDF45145", "sdvfg425AA", "dfgRS12L","145214","42561524Z","DFGRTYH45" };
             userRegPattern.ValidatePassword(checkPassword);
         }
     }
