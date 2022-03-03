@@ -16,7 +16,11 @@ namespace Regex_Registration
 
             //checking lastname
             string[] checkLastName = { "Patil" };
-            userRegPattern.ValidateFirstName(checkLastName);
+            userRegPattern.ValidateLastName(checkLastName);
+
+            //checking lastname
+            string[] checkEmail = { "xyz@gmail.com","xyz@bl.com","abc155@bl.in" , "xyz11@bl.com", "abc+22@abc.com","a12@xyz.in","asdf123@gmail.com" };
+            userRegPattern.ValidateEmail(checkEmail);
 
         }
     }
