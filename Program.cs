@@ -9,8 +9,9 @@ namespace Regex_Registration
         static void Main (string[] args)
         {
             UserRegPattern userRegPattern = new UserRegPattern();
+ 
             string[] checkFirstName = { "Rushi", "ram", "PREM", "rOHAN" };
-            userRegPattern.ValidateFirstName(checkFirstName);
+
         }
     }
 }
