@@ -11,11 +11,11 @@ namespace Regex_Registration
             UserRegPattern userRegPattern = new UserRegPattern();
 
             //vhecking firstname
-            string[] checkFirstName = { "Rushi" };
+            string[] checkFirstName = { "Rushi","ram","PREM","rOHAN" };
             userRegPattern.ValidateFirstName(checkFirstName);
 
             //checking lastname
-            string[] checkLastName = { "Patil" };
+            string[] checkLastName = { "Patil","PATIL","kOLI" };
             userRegPattern.ValidateFirstName(checkLastName);
 
         }
