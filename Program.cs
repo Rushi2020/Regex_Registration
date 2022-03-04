@@ -10,6 +10,7 @@ namespace Regex_Registration
         {
             UserRegPattern userRegPattern = new UserRegPattern();
 
+
             //vhecking firstname
             string[] checkFirstName = { "Rushi", "ram", "PREM", "rOHAN" };
             userRegPattern.ValidateFirstName(checkFirstName);
@@ -29,6 +30,11 @@ namespace Regex_Registration
             //checking Password
             string[] checkPassword = { "A@$3aRABE4", "sdvfg425AA", "A#3aFaaET2", "@dfgh15f", "dfgRS12L", "145214", "42561524Z", "DFGRTYH45" };
             userRegPattern.ValidatePassword(checkPassword);
+
+
+
+
+
         }
     }
 }
