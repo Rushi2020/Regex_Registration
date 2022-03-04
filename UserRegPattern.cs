@@ -15,6 +15,9 @@ namespace Regex_Registration
         public static string MobileNo = "^+91[][5-9]{1}[0-9]{9}$";
         public static string Password = "^[A-Z][@#$%&*]{1}[1-9a-zA-Z]{1}[a-zA-Z0-9]{7,}$";
 
+        public static string Email2 = "^[a-z]{3,}(([.|+]{1})?([-]{1})?[0-9]{1,})?@[a-z0-9]{1,}.[a-z]{3}(.[a-z]{2,4})?$";
+
+
         public void ValidateFirstName(string[] name)
         {
             //Firstname validation
