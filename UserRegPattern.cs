@@ -62,7 +62,7 @@ namespace Regex_Registration
 
         public void ValidatePassword(string[] name)
         {
-            //mobile number validation
+            //password validation
             foreach (string n in name)
             {
                 string result = Regex.IsMatch(n, Password) ? $"{n} entered is valid" : $"{n} entered is Invalid";
