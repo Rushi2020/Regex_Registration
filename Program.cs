@@ -20,6 +20,7 @@ namespace Regex_Registration
             userRegPattern.Validate("abc@gmail.com.com");
             userRegPattern.Validate("abc+100@gmail.com");
 
+
             //invalid
             userRegPattern.Validate("abc@.com.my");
             userRegPattern.Validate(".abc@abc.com");
@@ -28,6 +29,7 @@ namespace Regex_Registration
             userRegPattern.Validate("abc@gmail.com.1a");
             userRegPattern.Validate("abc@gmail.com.aa.au");
 
+           
 
         }
     }
