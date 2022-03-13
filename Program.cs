@@ -1,39 +1,35 @@
-﻿//  User registration using regex
-
+﻿// See https://aka.ms/new-console-template for more information
 using System;
 
 namespace Regex_Registration
 {
-    class program
+    internal class Program
     {
-        static void Main (string[] args)
+        static void Main(string[] args)
         {
+            Console.WriteLine("user registration");
             UserRegPattern userRegPattern = new UserRegPattern();
+            //valid
+            userRegPattern.Validate("abc@yahoo.com");
+            userRegPattern.Validate("abc-100@yahoo.com");
+            userRegPattern.Validate("abc.100@yahoo.com");
+            userRegPattern.Validate("abc111@abc.com");
+            userRegPattern.Validate("abc-100@abc.net");
+            userRegPattern.Validate("abc.100@abc.com.au");
+            userRegPattern.Validate("abc@1.com");
+            userRegPattern.Validate("abc@gmail.com.com");
+            userRegPattern.Validate("abc+100@gmail.com");
 
 
-            //vhecking firstname
-            string[] checkFirstName = { "Rushi", "ram", "PREM", "rOHAN" };
-            userRegPattern.ValidateFirstName(checkFirstName);
+            //invalid
+            userRegPattern.Validate("abc@.com.my");
+            userRegPattern.Validate(".abc@abc.com");
+            userRegPattern.Validate("abc@abc@gmail.com");
+            userRegPattern.Validate("abc..2002@gmail.com");
+            userRegPattern.Validate("abc@gmail.com.1a");
+            userRegPattern.Validate("abc@gmail.com.aa.au");
 
-            //checking lastname
-            string[] checkLastName = { "Patil", "PATIL", "kOLI" };
-            userRegPattern.ValidateLastName(checkLastName);
-
-            //checking Email
-            string[] checkEmail = { "xyz@gmail.com", "xyz@bl.com", "abc155@bl.in", "xyz11@bl.com", "abc+22@abc.com", "a12@xyz.in", "asdf123@gmail.com" };
-            userRegPattern.ValidateEmail(checkEmail);
-
-            //checking mobile number
-            string[] checkMobileNo = { "91 8969548565", "918695758565", "914525412562" };
-            userRegPattern.ValidateMobileNo(checkMobileNo);
-
-            //checking Password
-            string[] checkPassword = { "A@$3aRABE4", "sdvfg425AA", "A#3aFaaET2", "@dfgh15f", "dfgRS12L", "145214", "42561524Z", "DFGRTYH45" };
-            userRegPattern.ValidatePassword(checkPassword);
-
-
-
-
+           
 
         }
     }
